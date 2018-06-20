@@ -1,0 +1,155 @@
+.page{
+	background: url("../images/backgr.jpg") gray;
+	-moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+	background-size: 100%;
+}
+
+.content{
+	position: relative;
+	margin: 10% auto;
+	padding: 15px;
+	width: 700px;
+	height: 50%;
+	background-color: #111a28;
+	border-radius: 10px;
+}
+
+.content__logo{
+	margin-top: 20px;
+	margin-left: 15px;
+}
+
+.product__photo{
+	display: inline-block;
+	width: 65%;
+}
+
+.photo{
+	margin: 50px 10px;
+}
+
+.photo__colorSelector{
+	margin: auto 30%;
+}
+
+.photo__colorSelector__button{
+	display: inline-block;
+ 	width: 10px;
+ 	height: 10px;
+	cursor: pointer;
+	border-radius: 50%;
+	border: 2px solid #111a28;
+}
+
+.photo__colorSelector__button:first-child{
+	border: 2px solid gray;
+}
+
+.blueButton{
+	background-color: #1f273f;
+}
+
+.whiteButton{
+	background-color: #ffffff;
+}
+
+.redButton{
+	background-color: #ed3333;
+}
+
+.cyanButton{
+	background-color: #29e3ea;
+}
+
+.product__menu{
+	float: right;
+	display: inline-block;
+	margin-right: 50px;
+}
+
+.menu__title{
+	font-family: 'museo_sans100', sans-serif;
+	color: #e1e1e1;
+}
+
+.title__main{
+	font-size: 24px;
+	line-height: 1.1;
+	font-weight: 100;
+	margin-bottom: 10px;
+}
+
+.title__sub{
+	margin: 0;
+	color: #4f5560;
+	font-size: 14px;
+	line-height: 1.1;
+}
+
+.menu__scoring{
+	width: 65px;
+	height: 15px;
+	margin: 20px 0;
+}
+
+.menu__scoring__input{
+	display: none;
+}
+
+.label_rating {
+	float: right;
+	display: block;
+	width: 13px;
+	height: 13px;
+	background: url(../images/graystar.png) no-repeat;
+	cursor: pointer;
+}
+
+.menu__scoring .label_rating:hover, /*Правило для ховера на текущий лейбл*/
+.menu__scoring .label_rating:hover ~ .label_rating, /*Правило для всех следующих лейблов по DOM дереву*/
+.menu__scoring input[type="radio"]:checked ~ .label_rating /*Правило для всех следующих лейблов после выбранного инпута, чтобы звездочки как бы зафиксировались*/
+{
+	background: url(../images/ystar.png) no-repeat;
+}
+
+.menu__options{
+	margin-bottom: 30px;
+	color: white;
+	
+}
+
+.menu__options__size, .menu__options__qty{
+	width: 68px;
+    height: 32px;
+    overflow: hidden;
+    display: inline-block;
+    padding: 5px;  
+    -webkit-appearance: none;
+ 	-moz-appearance: none;
+    appearance: none;
+    background: url(../images/list.png) center right 5px no-repeat;
+    color: #4f5560;
+    border: 1px solid #4f5560;
+    cursor: pointer;
+    font-family: 'museo_sans100', sans-serif;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 1.2;
+}
+
+.menu__addToCart{
+	width: 180px;
+	color: #e1e1e1;
+	font-weight: 400;
+	background-color: #202835;
+	border: 1px solid #4f5560;
+	margin-bottom: 35px; 
+	padding: 10px; 
+	line-height: 1.3;
+	text-decoration: none;
+	font-family: 'museo_sans100', sans-serif;
+	font-size: 14px;
+	cursor: pointer;
+}
